@@ -1,0 +1,3 @@
+input_file=src\\literal_translator\\files\\input.txt
+output_file=src\\literal_translator\\files\\output.txt
+buffer_size=20
