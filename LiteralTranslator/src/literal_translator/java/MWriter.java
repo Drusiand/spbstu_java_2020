@@ -39,12 +39,11 @@ public class MWriter implements IWriter {
     public MWriter(MReader reader) {
         this.output = reader.getProperties().get(GrammarReader.output);
         this.buffer_size = Integer.parseInt(reader.getProperties().get(GrammarReader.buffer));
-        this.Refresh();
     }
 
-    public void WriteInFile(char[] output) {
+    public void WriteInFile(char[] output, File directory) {
         try {
-            BufferedWriter buf = new BufferedWriter(new FileWriter(new File(this.output), true));
+            BufferedWriter buf = new BufferedWriter(new FileWriter(directory, true));
             buf.write(output);
             buf.close();
         } catch (IOException | NullPointerException exception) {
@@ -52,12 +51,11 @@ public class MWriter implements IWriter {
         }
     }
 
-    void Refresh() {
-        File myFile = new File(this.output);
+    static void RefreshFile(File file) {
         try {
-            if (myFile.exists()) {
-                myFile.delete();
-                myFile.createNewFile();
+            if (file.exists()) {
+                file.delete();
+                file.createNewFile();
             }
         } catch (IOException exception) {
             System.out.println(exception.getMessage());

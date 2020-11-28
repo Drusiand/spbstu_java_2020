@@ -1,0 +1,2 @@
+encoding_mode=true
+encoded_data=src\\literal_translator\\files\\encoded_out.txt
