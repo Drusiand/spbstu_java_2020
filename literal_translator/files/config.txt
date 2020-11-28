@@ -1,0 +1,6 @@
+input_file=src\\literal_translator\\files\\input.txt
+output_file=src\\literal_translator\\files\\output.txt
+exec_encode_cfg=src\\literal_translator\\files\\exec_encode_cfg.txt
+exec_decode_cfg=src\\literal_translator\\files\\exec_decode_cfg.txt
+buffer_size=20
+encoding_mode=true

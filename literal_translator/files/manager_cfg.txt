@@ -1,0 +1,6 @@
+input_file=src\\literal_translator\\files\\input.txt
+output_file=src\\literal_translator\\files\\output.txt
+reader_cfg=src\\literal_translator\\files\\reader_cfg.txt
+writer_cfg=src\\literal_translator\\files\\writer_cfg.txt
+executor_and_cfg=Translator, src\\literal_translator\\files\\executor_cfg.txt;
+order=literal_translator.java.MReader->literal_translator.java.Translator->literal_translator.java.MWriter
