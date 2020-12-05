@@ -1,0 +1,3 @@
+input_file=configs\\encoded_sources\\input.txt
+output_file=configs\\encoded_sources\\output.txt
+order = MReader, configs\\exe_configs\\reader_cfg.txt->Translator, configs\\exe_configs\\exec_encode_cfg.txt->Translator, configs\\exe_configs\\exec_decode_cfg.txt -> ru.spbstu.timofeev.workers.FileWriter, libs\\timofeev_configs\\writer_config.txt

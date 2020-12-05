@@ -1,0 +1,3 @@
+input_file=configs\\default_sources\\input.txt
+output_file=configs\\default_sources\\output.txt
+order = MReader, configs\\exe_configs\\reader_cfg.txt->ru.spbstu.timofeev.workers.Substitutor, libs\\timofeev_configs\\executor_config.txt->ru.spbstu.timofeev.workers.Substitutor, libs\\timofeev_configs\\executor_config.txt-> MWriter, configs\\exe_configs\\writer_cfg.txt
